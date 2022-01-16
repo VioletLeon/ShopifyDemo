@@ -44,7 +44,7 @@ export default function Home() {
           Spacestagram
         </h1>
         <h2 className="text-2xl text-lightBlue">
-          Brought to you by NASA's Image API
+          Brought to you by NASA Image API
         </h2>
 
         <ImageGrid pictureData={pictureData} />
