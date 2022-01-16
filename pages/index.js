@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import { getLast5Days } from './hooks/getLast5Days';
+import { getLast5Days } from '../hooks/getLast5Days';
 import ImageGrid from './components/frontPageRange';
 
 export default function Home() {
