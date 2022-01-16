@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Deployed Website: [Website](https://shopify-demo-8nudzytok-violetleon.vercel.app/)
 
-## Getting Started
+## The Challenge
+We need a webpage that can pull images, and allow the user to “like” and “unlike” their favourite images.
 
-First, run the development server:
+- We'd like a simple to use interface that makes it easy to:
+- Fetch data from one of NASA’s APIs and display the resulting images (more details under Technical Requirements)
+- Display descriptive data for each image (for example: title, date, description, etc.)
+- Like an image
+- Unlike an image
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Technical requirements
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Search results should come from NASA’s free APIs, for which you’ll need a free API key from https://api.nasa.gov - 
+you do not need to enter anything more than your first name, last name, and email address (i.e. application url is not required)
+-We’ve provided screenshots below of demo apps we built using the Astronomy Picture of the Day or Mars Rover Photos APIs (along with Shopify’s open source React component library: Polaris). 
+- You are free to use any NASA API you like
+- You are free to use any front end framework/component library you like (or none at all!)
+- Each image result should list at least a title, date of capture (ideally in earth_date) and a button to “like” that image.
+- Each image can be “liked”, and a user should be able to undo their “like”
+- The HTML that ends up being served client-side should be accessible and semantic (MDN reference)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Extras
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+There is a lot to be improved on here, you can polish the required features by crafting a nicer design, or improve the app by adding new features! Choose something that you feel best showcases your passion and skills.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- ~~Save likes if the user leaves or reloads the page
+- Animate the “like” action (might we suggest a heart?) // Minor animations added
+- ~~Add a loading state while we wait for NASA’s API to return data
+- Create shareable links for each image
+- Add a date-picker to be able to browse photos starting from a specific date
 
-## Learn More
+## Techologies Used
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Next.JS (React Framework)
+- Tailwind CSS
+- Axios
+- Vercel (Website Hosting)
